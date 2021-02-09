@@ -2,18 +2,18 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-url1 = ""
+url1 = "https://feeds.simplecast.com/xCQr3ykc"
 @plugin.route('/')
 def main_menu():
     items = [
         {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('episodes1'),
-            'thumbnail': ""},
+            'thumbnail': "https://image.simplecastcdn.com/images/b623b331-ffef-40c4-918d-b35a07ee8729/7dbfebb7-5f40-4769-bb89-ee9d2e6f534d/3000x3000/1550002519artwork.jpg?aid=rss_feed"},
         {
             'label': plugin.get_string(30000),
             'path': plugin.url_for('episodes'),
-            'thumbnail': ""},
+            'thumbnail': "https://image.simplecastcdn.com/images/b623b331-ffef-40c4-918d-b35a07ee8729/7dbfebb7-5f40-4769-bb89-ee9d2e6f534d/3000x3000/1550002519artwork.jpg?aid=rss_feed"},
     ]
     return items
 
